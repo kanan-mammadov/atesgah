@@ -23,7 +23,7 @@ namespace PracticalTest.Controllers
         {
             
 
-            return View(await _context.Loan.OrderBy(x=>x.Amount).ToListAsync());
+            return View(await _context.Loan.Take(10).ToListAsync());
         }
 
         // GET: Loans/Details/5

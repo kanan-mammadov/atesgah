@@ -12949,11 +12949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kanan\\source\\repos\\PracticalTest\\PracticalTest\\PracticalTest.csproj",
+      "projectUniqueName": "E:\\Shortcuts\\atesgah\\PracticalTest\\PracticalTest\\PracticalTest.csproj",
       "projectName": "PracticalTest",
-      "projectPath": "C:\\Users\\kanan\\source\\repos\\PracticalTest\\PracticalTest\\PracticalTest.csproj",
+      "projectPath": "E:\\Shortcuts\\atesgah\\PracticalTest\\PracticalTest\\PracticalTest.csproj",
       "packagesPath": "C:\\Users\\kanan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kanan\\source\\repos\\PracticalTest\\PracticalTest\\obj\\",
+      "outputPath": "E:\\Shortcuts\\atesgah\\PracticalTest\\PracticalTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
