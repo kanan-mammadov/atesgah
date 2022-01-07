@@ -1,0 +1,60 @@
+﻿@model PracticalTest.Models.Invoices
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Invoices</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="InvoiceId" />
+            <div class="form-group">
+                <div class="row">
+                    <div class="alert-danger" asp-validation-summary="ModelOnly"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <label asp-for="ClientId" class="control-label">Client</label>
+                        <select asp-for="ClientId"
+                                class="form-control"
+                                asp-items="@(new SelectList(@ViewBag.ListOfClient,"ClientId", "Name"))"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DueDate" class="control-label"></label>
+                <input asp-for="DueDate" class="form-control" />
+                <span asp-validation-for="DueDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoiceNr" class="control-label"></label>
+                <input asp-for="InvoiceNr" class="form-control" />
+                <span asp-validation-for="InvoiceNr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderNr" class="control-label"></label>
+                <input asp-for="OrderNr" class="form-control" />
+                <span asp-validation-for="OrderNr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
